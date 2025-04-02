@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+
+    <!ELEMENT libro (titulo, editorial, autor, paginas)>
+
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT editorial (#PCDATA)>
+        
+        <!ELEMENT autor (nombre, apellidos)>
+        
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT apellidos (#PCDATA)>
+        
+        <!ELEMENT paginas (#PCDATA)>
+]>
+
+<!-- 
+Nombre: Henry Leonardo Talavera Velasquez 
+Curso: DAW1
+Fecha: 2/4/2025 
+Ejercicio: Ejercicio 1 
+-->
+
+<biblioteca>
+    <!-- Primer libro -->
+    <libro>
+        <titulo>El Quijote</titulo>
+        <editorial>Editorial Santillana</editorial>
+        <autor>
+            <nombre>Miguel</nombre>
+            <apellidos>de Cervantes</apellidos>
+        </autor>
+        <paginas>863</paginas>
+    </libro>
+    
+    <!-- Segundo libro -->
+    <libro>
+        <titulo>Cien años de soledad</titulo>
+        <editorial>Editorial Sudamericana</editorial>
+        <autor>
+            <nombre>Gabriel</nombre>
+            <apellidos>García Márquez</apellidos>
+        </autor>
+        <paginas>471</paginas>
+    </libro>
+
+    <!-- Tercer libro -->
+    <libro>
+        <titulo>1984</titulo>
+        <editorial>Secker & Warburg</editorial>
+        <autor>
+            <nombre>George</nombre>
+            <apellidos>Orwell</apellidos>
+        </autor>
+        <paginas>328</paginas>
+    </libro>
+</biblioteca>
